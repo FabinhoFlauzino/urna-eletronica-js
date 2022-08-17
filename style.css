@@ -1,0 +1,221 @@
+@keyframes piscar {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom, #83bbde 50%, #eaeaea 100%);
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: inset 5px #dbd5c9;
+    display: flex;
+    flex-direction: column;
+}
+
+.superior {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+}
+
+.superior-esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.voto {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.cargo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    flex: 1;
+    line-height: 30px;
+}
+
+.numeros {
+    height: 50px;
+}
+
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca {
+    animation: piscar 1s infinite;
+}
+
+.superior-direita {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imagem{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+.imagem.small {
+    width: 80%;
+    font-size: 12px;
+}
+
+.inferior {
+    font-size: 14px;
+    border-top: 2px solid #000;
+}
+
+.inferior p {
+    padding: 5px;
+    margin: 0;
+}
+
+.inferior p span {
+    display: block;
+}
+
+.teclado {
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+
+.teclado-linha {
+    display: flex;
+    justify-content: center;
+}
+
+.tecla {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 1px #777, 5px 5px 1px #eee;
+}
+
+.btn-branco {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+}
+
+.btn-corrige {
+    background-color: #f09046;
+    color: #000;
+    font-size: 14px;
+}
+
+.btn-confirma {
+    background-color: #00b300;
+    color: #000;
+    font-size: 14px;
+}
+
+.aviso-grande{
+    font-size: 40px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.aviso-gigante{
+    font-size: 70px;
+    color: #1c1c1c;
+    font-weight: bold;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 500px){
+    .urna {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .tela {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+        border: inset 5px #dbd5c9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .superior {
+        flex: 1;
+        display: flex;
+        padding: 10px;
+    }
+
+    .teclado {
+        background-color: #403a3a;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .aviso-grande {
+        font-size: 25px;
+        color: #1c1c1c;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+}

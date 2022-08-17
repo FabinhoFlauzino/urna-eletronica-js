@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica - JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="superior">
+                <div class="superior-esquerda">
+                    <div class="voto">
+                        <span>Seu voto para</span>
+                    </div>
+                    <div class="cargo">
+                        <span>Vereador</span>
+                    </div>
+                    <div class="numeros">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="info">
+                        Nome: Fulano de tal<br>
+                        Partido: PSL<br>
+                        Vice-Prefeito: Fulano de tal 2
+                    </div>
+                </div>
+                <div class="superior-direita">
+                    <div class="imagem">
+                        <img src="img/10.png">
+                        Prefeito
+                    </div>
+                    <div class="imagem small">
+                        <img src="img/11.png">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="inferior">
+                <p>
+                    Aperte a tecla:
+                    <span>CONFIRMAR: para confirmar o voto</span>
+                    <span>CORRIGIR: para corrigir o voto</span>
+                </p>
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado-linha">
+                <div class="tecla" onclick="clicou(1)">1</div>
+                <div class="tecla" onclick="clicou(2)">2</div>
+                <div class="tecla" onclick="clicou(3)">3</div>
+
+            </div>
+            <div class="teclado-linha">
+                <div class="tecla" onclick="clicou(4)">4</div>
+                <div class="tecla" onclick="clicou(5)">5</div>
+                <div class="tecla" onclick="clicou(6)">6</div>
+
+            </div>
+            <div class="teclado-linha">
+                <div class="tecla" onclick="clicou(7)">7</div>
+                <div class="tecla" onclick="clicou(8)">8</div>
+                <div class="tecla" onclick="clicou(9)">9</div>
+            </div>
+            <div class="teclado-linha">
+                <div class="tecla" onclick="clicou(0)">0</div>
+            </div>
+            <div class="teclado-linha">
+                <div class="tecla btn-branco" onclick="branco()">Branco</div>
+                <div class="tecla btn-corrige" onclick="corrige()">Corrige</div>
+                <div class="tecla btn-confirma" onclick="confirma()">Confirma</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="etapas.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
