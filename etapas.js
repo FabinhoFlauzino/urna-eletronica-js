@@ -1,14 +1,14 @@
 let etapas = [
     {
-        titulo: 'Vereador',
+        titulo: 'Deputado Estadual',
         numeros: 5,
         candidatos: [
             {
                 numero: "12345",
-                nome: 'João',
-                partido: 'Partido 1',
+                nome: 'Gabi Suspensório',
+                partido: 'Cachaça',
                 fotos: [
-                    {url: '10.png', legenda: 'Vereador'}
+                    {url: '24.jpg', legenda: 'Deputado'}
                 ]
             },
             {
@@ -16,33 +16,43 @@ let etapas = [
                 nome: 'Maria',
                 partido: 'Partido 2',
                 fotos: [
-                    {url: '11.png', legenda: 'Vereador'}
+                    {url: '11.png', legenda: 'Deputado'}
                 ]
             }
         ]
     },
     {
-        titulo: 'Prefeito',
+        titulo: 'Presidente',
         numeros: 2,
         candidatos: [
             {
-                numero: "10",
-                nome: 'Fulano',
-                partido: 'Partido 1',
-                vice: 'Ciclano',
+                numero: "12",
+                nome: 'Sanfona Gomes',
+                partido: 'Partido dos Sanfoneiros',
+                vice: 'Gabi Suspensório',
                 fotos: [
-                    {url: '12.png', legenda: 'Prefeito'},
+                    {url: '20.jpg', legenda: 'Presidente'},
+                    {url: '11.png', legenda: 'Vice-Presidente', small: true}
+                ]
+            },
+            {
+                numero: "13",
+                nome: 'Chico Tripa da Silva',
+                vice: 'Alguém',
+                partido: 'Comuna',
+                fotos: [
+                    {url: '14.png', legenda: 'Prefeito'},
                     {url: '13.png', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
             {
-                numero: "12",
-                nome: 'Beltrano',
-                vice: 'Alguém',
-                partido: 'Partido 2',
+                numero: "22",
+                nome: 'Chefe',
+                vice: 'Vice-Chef',
+                partido: 'Dos Chefes',
                 fotos: [
-                    {url: '10.png', legenda: 'Prefeito'},
-                    {url: '11.png', legenda: 'Vice-Prefeito', small: true}
+                    {url: '22.jpg', legenda: 'Prefeito'},
+                    {url: '12.png', legenda: 'Vice-Prefeito', small: true}
                 ]
             }
         ]

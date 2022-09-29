@@ -146,6 +146,12 @@ body {
     margin: 10px;
     cursor: pointer;
     box-shadow: 3px 3px 1px #777, 5px 5px 1px #eee;
+    transition: .1s;
+}
+
+.tecla:active {
+    transform: translate(4px,4px);
+    box-shadow: 0 0 0 0 #000;
 }
 
 .btn-branco {
