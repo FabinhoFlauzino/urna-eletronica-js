@@ -41,8 +41,8 @@ let etapas = [
                 vice: 'Alguém',
                 partido: 'Comuna',
                 fotos: [
-                    {url: '14.png', legenda: 'Prefeito'},
-                    {url: '13.png', legenda: 'Vice-Prefeito', small: true}
+                    {url: '14.png', legenda: 'Presidente'},
+                    {url: '13.png', legenda: 'Vice-Presidente', small: true}
                 ]
             },
             {
@@ -51,8 +51,8 @@ let etapas = [
                 vice: 'Vice-Chef',
                 partido: 'Dos Chefes',
                 fotos: [
-                    {url: '22.jpg', legenda: 'Prefeito'},
-                    {url: '12.png', legenda: 'Vice-Prefeito', small: true}
+                    {url: '22.jpg', legenda: 'Presidente'},
+                    {url: '12.png', legenda: 'Vice-Presidente', small: true}
                 ]
             }
         ]
